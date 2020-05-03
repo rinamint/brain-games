@@ -12,7 +12,7 @@ export const game = () => {
   let num = getRandomInt(1, 50);
   for (let i = 1; i <= 3;) {
     console.log(`Question: ${num}`);
-    const userAnswer = readlineSync.question('Your answer:')
+    const userAnswer = readlineSync.question('Your answer:');
     if (isEven(num) === userAnswer) {
       console.log('Correct!');
       if (i === 3) {
