@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { name, rules, getRandomInt } from '../index.js';
+import { hello, rules, getRandomInt } from '../index.js';
 
-const userName = name;
+const userName = hello();
 const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 console.log('Answer "yes" if the number is even, otherwise answer "no"');
 

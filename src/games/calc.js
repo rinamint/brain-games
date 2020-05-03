@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { name, rules, getRandomInt } from '../index.js';
+import { hello, rules, getRandomInt } from '../index.js';
 
-const userName = name;
+const userName = hello();
 
 const calculation = (num1, num2, operator) => {
   if (operator === '-') {
