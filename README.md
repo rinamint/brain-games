@@ -21,3 +21,8 @@ brain-gcd
 brain-prog
 
 [![asciicast](https://asciinema.org/a/128oVd9JrBK9zz3WJPSPdRnbm.svg)](https://asciinema.org/a/128oVd9JrBK9zz3WJPSPdRnbm)
+
+
+brain-prime
+
+[![asciicast](https://asciinema.org/a/LpO3HuCBhkrigU8TGasfvkNIa.svg)](https://asciinema.org/a/LpO3HuCBhkrigU8TGasfvkNIa)
