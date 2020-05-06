@@ -1,4 +1,5 @@
-import { getRandomNum, gameEngine } from '../index.js';
+import { getRandomNum } from '../index.js';
+import gameEngine from '../gameEngine.js';
 
 const description = 'What is the result of the expression?';
 const calculator = (num1, num2, operator) => {

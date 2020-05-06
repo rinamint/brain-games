@@ -1,4 +1,5 @@
-import { getRandomNum, gameEngine } from '../index.js';
+import { getRandomNum } from '../index.js';
+import gameEngine from '../gameEngine.js';
 
 const description = 'What number is missing in the progression?';
 const makeProgression = (number, d, l = 10) => {

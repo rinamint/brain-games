@@ -1,5 +1,5 @@
-
-import { getRandomNum, gameEngine } from '../index.js';
+import { getRandomNum } from '../index.js';
+import gameEngine from '../gameEngine.js';
 
 const isEven = (number) => (number % 2 === 0 ? 'yes' : 'no');
 export const description = 'Answer "yes" if number is even otherwise answer "no"';
