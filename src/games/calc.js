@@ -1,8 +1,9 @@
-import { getRandomNum } from '../index.js';
-import gameEngine from '../gameEngine.js';
+import generateRandomNum from '../utils.js';
+import run from '../gameEngine.js';
 
 const description = 'What is the result of the expression?';
-const calculator = (num1, num2, operator) => {
+
+const calculate = (num1, num2, operator) => {
   if (operator === '-') {
     return String(num1 - num2);
   } if (operator === '+') {
@@ -10,16 +11,17 @@ const calculator = (num1, num2, operator) => {
   }
   return String(num1 * num2);
 };
-const mainFunctionOfCalc = () => {
+
+const generateRound = () => {
   const operations = ['*', '-', '+'];
-  const randomOperator = operations[getRandomNum(0, 2)];
-  const number1 = getRandomNum(1, 10);
-  const number2 = getRandomNum(1, 10);
-  const askUser = [number1, randomOperator, number2].join(' ');
-  const resultOfCalc = calculator(number1, number2, randomOperator);
-  return [askUser, resultOfCalc];
+  const randomOperator = operations[generateRandomNum(0, 2)];
+  const number1 = generateRandomNum(1, 10);
+  const number2 = generateRandomNum(1, 10);
+  const question = [number1, randomOperator, number2].join(' ');
+  const rightAnswer = calculate(number1, number2, randomOperator);
+  return [question, rightAnswer];
 };
 
 export default () => {
-  gameEngine(description, mainFunctionOfCalc);
+  run(description, generateRound);
 };

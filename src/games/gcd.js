@@ -1,5 +1,5 @@
-import { getRandomNum } from '../index.js';
-import gameEngine from '../gameEngine.js';
+import generateRandomNum from '../utils.js';
+import run from '../gameEngine.js';
 
 const description = 'Find the greatest common divisor of given numbers.';
 
@@ -13,14 +13,14 @@ const findTheGreatestDivider = (num1, num2) => {
   return String(result);
 };
 
-const mainFunctionOfGcd = () => {
-  const randomNum1 = getRandomNum(1, 30);
-  const randomNum2 = getRandomNum(1, 30);
+const generateRound = () => {
+  const randomNum1 = generateRandomNum(1, 30);
+  const randomNum2 = generateRandomNum(1, 30);
   const rightAnswer = findTheGreatestDivider(randomNum1, randomNum2);
   const askUser = [randomNum1, randomNum2].join(' ');
   return [askUser, rightAnswer];
 };
 
 export default () => {
-  gameEngine(description, mainFunctionOfGcd);
+  run(description, generateRound);
 };

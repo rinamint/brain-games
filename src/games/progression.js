@@ -1,5 +1,5 @@
-import { getRandomNum } from '../index.js';
-import gameEngine from '../gameEngine.js';
+import generateRandomNum from '../utils.js';
+import run from '../gameEngine.js';
 
 const description = 'What number is missing in the progression?';
 const makeProgression = (number, d, l = 10) => {
@@ -17,17 +17,17 @@ const theMissingNum = (madeProgression, position) => {
   return String(rightAnswer);
 };
 
-const mainFunctionOfProgression = () => {
-  const startOfProgression = getRandomNum(1, 10);
-  const stepOfProgression = getRandomNum(1, 10);
+const generateRound = () => {
+  const startOfProgression = generateRandomNum(1, 10);
+  const stepOfProgression = generateRandomNum(1, 10);
   const rightProgression = makeProgression(startOfProgression, stepOfProgression);
-  const randomPosition = getRandomNum(0, 9);
-  const shownProgression = [...rightProgression];
-  shownProgression[randomPosition] = '..';
+  const randomPosition = generateRandomNum(0, 9);
+  const question = [...rightProgression];
+  question[randomPosition] = '..';
   const rightAnswer = theMissingNum(rightProgression, randomPosition);
-  return [shownProgression, rightAnswer];
+  return [question, rightAnswer];
 };
 
 export default () => {
-  gameEngine(description, mainFunctionOfProgression);
+  run(description, generateRound);
 };
