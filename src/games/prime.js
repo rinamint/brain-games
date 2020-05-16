@@ -3,11 +3,14 @@ import run from '../gameEngine.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-const isItPrime = (num) => {
-  if (num > 0 && num <= 3) {
+const isPrime = (num) => {
+  if (num <= 0) {
+    return false;
+  }
+  if (num > 0 && num <= 2) {
     return true;
   }
-  for (let i = 2; i < num; i += 1) {
+  for (let i = 2; i <= num / 2; i += 1) {
     if (num % i === 0) {
       return false;
     }
@@ -18,7 +21,7 @@ const isItPrime = (num) => {
 const generateRound = () => {
   const num = generateRandomNum(1, 30);
   const question = String(num);
-  const rightAnswer = isItPrime(num) ? 'yes' : 'no';
+  const rightAnswer = isPrime(num) ? 'yes' : 'no';
   return [question, rightAnswer];
 };
 
