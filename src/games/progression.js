@@ -1,5 +1,5 @@
 import generateRandomNum from '../utils.js';
-import run from '../gameEngine.js';
+import run from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -11,14 +11,14 @@ const generateRound = () => {
   for (let i = 0; i < length; i += 1) {
     progression.push(start + (step * (i)));
   }
-  const missingNum = generateRandomNum(0, length - 1);
+  const missingNumIndex = generateRandomNum(0, length - 1);
   const question = progression.map((element, index) => {
-    if (index === missingNum) {
+    if (index === missingNumIndex) {
       return '..';
     }
     return element;
   });
-  const rightAnswer = String(progression[missingNum]);
+  const rightAnswer = String(progression[missingNumIndex]);
   return [question, rightAnswer];
 };
 

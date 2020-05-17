@@ -1,5 +1,5 @@
 import generateRandomNum from '../utils.js';
-import run from '../gameEngine.js';
+import run from '../index.js';
 
 const description = 'What is the result of the expression?';
 
