@@ -1,7 +1,9 @@
-# frontend-project-lvl1
+#brain-games
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ![Node.js CI](https://github.com/rinamint/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
+
+Simple cli-app which allows user to play different games 3 rounds each.
 
 brain-even
 
