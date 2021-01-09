@@ -5,26 +5,28 @@
 
 ### Simple cli-app which allows user to play different games 3 rounds each.
 
-brain-even
+#### Games: 
+
+##### 'brain-even'
 
 [![asciicast](https://asciinema.org/a/c8h9SUhng1g1aow03L3iXf2iy.svg)](https://asciinema.org/a/c8h9SUhng1g1aow03L3iXf2iy)
 
 
-brain-calc
+##### 'brain-calc'
 
 [![asciicast](https://asciinema.org/a/WT65A8CRE3XbAIx9yPc12oukR.svg)](https://asciinema.org/a/WT65A8CRE3XbAIx9yPc12oukR)
 
 
-brain-gcd
+##### 'brain-gcd'
 
 [![asciicast](https://asciinema.org/a/UPdde2iXyOGqby2uv0BBi7nC1.svg)](https://asciinema.org/a/UPdde2iXyOGqby2uv0BBi7nC1)
 
 
-brain-progression
+##### 'brain-progression'
 
 [![asciicast](https://asciinema.org/a/GJ69Aqp3wSSLsr1iZNE7Fa9is.svg)](https://asciinema.org/a/GJ69Aqp3wSSLsr1iZNE7Fa9is)
 
 
-brain-prime
+##### 'brain-prime'
 
 [![asciicast](https://asciinema.org/a/LpO3HuCBhkrigU8TGasfvkNIa.svg)](https://asciinema.org/a/LpO3HuCBhkrigU8TGasfvkNIa)
